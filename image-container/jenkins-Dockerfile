@@ -1,0 +1,5 @@
+FROM baseimage
+RUN yum install java -y
+RUN wget url && wget
+RUN yum install jenkins -y
+CMD ['systemctl start jenkins']
